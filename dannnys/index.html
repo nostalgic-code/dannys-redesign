@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dannys Ecom</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/media/images/dannyslogo-removebg.png" />
+    <link
+      href="../cdn.jsdelivr.net/npm/remixicon%404.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdn.jsdelivr.net/npm/locomotive-scroll%403.5.4/dist/locomotive-scroll.css"
+    />
+    <script src="../unpkg.com/tailwindcss-cdn%403.4.3/tailwindcss.js"></script>
+  </head>
+
+  <body theme="white">
+    <div class="counter">
+      <h1>0</h1>
+      <div class="loader-welcome">
+        <img src="Assets/media/images/dannyslogo-removebg.png" alt="" />
+      </div>
+    </div>
+
+    <div class="loader-overlay">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <main id="main" class="relative w-full overflow-clip">
+      <div id="main-nav">
+        <div class="section1">
+          <div class="main-links">
+            <div class="main-link">
+              <h2>Brands</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>About</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>Discover</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="main-link">
+              <h2>Shop</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+
+          <div class="main-contact">
+            <h2>Contact Us</h2>
+            <h2>Careers</h2>
+            <h2>Log in to Dannys</h2>
+          </div>
+
+          <div class="choose-country">
+            <i class="ri-global-line"></i>
+            <h2>Country</h2>
+            <span><i class="ri-arrow-up-line"></i></span>
+          </div>
+        </div>
+
+        <div class="section2" style="background-color: #0066a6;">
+          <div class="section2-p">
+            <h2>Do you want to become a partner?</h2>
+            <span>
+              <h3>Learn More</h3>
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </div>
+          <div class="section2-p">
+            <h2>For Existing Partners:</h2>
+            <span>
+              <h3>Learn More</h3>
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <div class="nav-left">
+          <a href="#">
+            <img src="Assets/media/images/dannyslogo-removebg.png" alt="Dannys Logo" style="height: 47px;" />
+          </a>
+
+          <div id="hide-hoja">
+            <a href="#" class="custom-underline">Brands</a>
+            <a href="#" class="custom-underline">Products</a>
+            <a href="#" class="custom-underline">About</a>
+            <a href="#" class="custom-underline">Contact</a>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <a href="#" class="tesla-link">
+            <span class="tesla-span">
+              <span class="get-tesla">Get Parts</span>
+              <span class="inner-icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  stroke="#fff"
+                  vector-effect="non-scaling-stroke"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-[0.6rem] plus-icon"
+                >
+                  <path
+                    d="M0 8h16M8 0v16"
+                    vector-effect="non-scaling-stroke"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <button
+            class="burger-button bg-transparent w-[2.875rem] group h-[2.875rem] rounded-full flex items-center justify-center z-60 transition-colors"
+            style="color: #0066a6;"
+          >
+            <span class="w-6 h-4 relative">
+              <span
+                class="line1 w-full h-[2px] bg-current absolute top-0 left-0 will-change-transform transition-all translate-y-0"
+              ></span>
+              <span
+                class="line2 w-full h-[2px] bg-current absolute top-1/2 left-0 -translate-y-1/2 transition-all"
+              ></span>
+              <span
+                class="line3 w-full h-[2px] bg-current absolute bottom-0 left-0 will-change-transform transition-all translate-y-0"
+              ></span>
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="home">
+        <div class="sticky">
+          <div class="content">
+            <h1 data-split="">
+             Delivering trusted automotive parts and solutions that drive performance and reliability.
+            </h1>
+            <video
+              autoplay
+              loop
+              muted
+              id="bg-image"
+              src="Assets/media/videos/landing1.mp4"
+              alt=""
+            ></video>
+          </div>
+          <div class="content">
+            <h1 data-split="">
+              Advancing the automotive industry with state-of-the-art parts and innovative solutions.
+            </h1>
+          </div>
+          <div class="content" id="pinned-content">
+           <h1 data-split="">
+              Driving industry progress with precision-engineered parts and forward-looking innovation.
+            </h1>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-6 mt-8">
+              <a href="#categories" class="tesla-link">
+                <span class="tesla-span">
+                  <span class="get-tesla">Shop Now</span>
+                  <span class="inner-icon">
+                    <i class="ri-arrow-right-line"></i>
+                  </span>
+                </span>
+              </a>
+              <a href="#products" class="tesla-link">
+                <span class="tesla-span">
+                  <span class="get-tesla">Explore Products</span>
+                  <span class="inner-icon">
+                    <i class="ri-arrow-right-line"></i>
+                  </span>
+                </span>
+              </a>
+            </div>
+      </div>
+
+
+      <div id="page2">
+        <h1 style="color: #0066a6;">Fully Equipped for your</h1>
+        <h1 style="color: #0066a6;">next adventure</h1>
+
+        <div id="page2-p1">
+          <h2 style="color: #0066a6;">[ FUTURE READY ]</h2>
+          <div class="page2-p1-right">
+            <h2 style="color: #0066a6;">Our Journey of Excellence</h2>
+            <p>
+              Dannys is committed to delivering high-quality automotive parts
+              and solutions that meet the evolving needs of our customers.
+              Our journey began with a vision to revolutionize the industry
+              through innovation and excellence. We continuously strive to
+              enhance our products and services, ensuring that we remain at
+              the forefront of the automotive sector.
+            </p>
+          </div>
+        </div>
+
+        <div id="scroll-effect">
+          <div class="scroll-effect-container">
+            <div class="scroll-effect-elem">
+              <h1 style="color: #0066a6 !important;">ENGINE & TIMING</h1>
+              <h2 style="color: #0066a6 !important;">Precision-Engineered Components</h2>
+              <h3 style="color: #0066a6 !important;">[ Reliable performance for every drive ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="Assets/media/images/auto1.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="Assets/media/images/auto2.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+               <p>
+                Our engine and timing parts are designed for durability and accuracy, ensuring smooth operation and long-lasting performance. Built with quality materials, they keep vehicles running at peak efficiency.
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1 style="color: #0066a6 !important;">ELECTRICAL</h1>
+              <h2 style="color: #0066a6 !important;">Trusted Automotive Solutions</h2>
+              <h3 style="color: #0066a6 !important;">[ Powering systems with efficiency ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="Assets/media/images/auto3.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="Assets/media/images/auto4.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+               <p>
+                From alternators to wiring, our electrical parts deliver consistent power and reliability. Each component is tested for performance to support modern vehicle demands and safety requirements.
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1 style="color: #0066a6 !important;">BRAKE & WHEEL</h1>
+              <h2 style="color: #0066a6 !important;">Safety-First Engineering</h2>
+              <h3 style="color: #0066a6 !important;">[ Stopping power you can trust ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="Assets/media/images/auto5.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="Assets/media/images/auto6.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+               <p>
+                Our brake and wheel components are crafted to deliver maximum safety and control. With precision manufacturing, they ensure dependable stopping power and stability on every road.
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1 style="color: #0066a6 !important;">STEERING & SUSPENSION</h1>
+               <h2 style="color: #0066a6 !important;">Control with Confidence</h2>
+               <h3 style="color: #0066a6 !important;">[ Smooth handling, stable performance ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="Assets/media/images/auto7.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="Assets/media/images/auto8.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+               <p>
+                Steering and suspension parts designed for precision, comfort, and durability. Engineered to deliver smooth handling and stability, keeping drivers in control no matter the conditions.
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1 style="color: #0066a6 !important;">CLUTCH & GEARBOX</h1>
+               <h2 style="color: #0066a6 !important;">Performance You Can Rely On</h2>
+               <h3 style="color: #0066a6 !important;">[ Seamless power transmission ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="Assets/media/images/auto9.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="Assets/media/images/image11.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                Our clutch and gearbox parts ensure smooth gear shifts and efficient power transfer. Designed for strength and reliability, they meet the demands of both everyday driving and heavy-duty use.
+              </p>
+            </div>
+
+            <div class="scroll-effect-elem">
+              <h1 style="color: #0066a6 !important;">TRANSMISSION</h1>
+              <h2 style="color: #0066a6 !important;">Advanced Automotive Technology</h2>
+              <h3 style="color: #0066a6 !important;">[ Built for efficiency and endurance ]</h3>
+              <div class="scroll-effect-elem-img">
+                <div class="clipped-corner">
+                  <img src="Assets/media/images/image12.avif" alt="" />
+                </div>
+                <div>
+                  <div class="clipped-corner">
+                    <img src="Assets/media/images/image13.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p>
+                Our transmission parts are engineered to deliver consistent performance and long service life. With precision-built components, they optimize efficiency and ensure reliable power delivery across all vehicle types.
+              </p>
+            </div>
+          </div>
+
+          <div id="scroll-right">
+            <div class="desk-img">
+              <img src="Assets/media/images/auto12.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="Assets/media/images/auto13.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="Assets/media/images/auto14.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="Assets/media/images/auto15.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="Assets/media/images/auto16.avif" alt="" />
+            </div>
+            <div class="desk-img">
+              <img src="Assets/media/images/auto17.avif" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!--todo list-->
+
+        <div class="mobile-content">
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="Assets/media/images/model%20s.avif" alt="" />
+            </div>
+            <h1>Tesla Model S</h1>
+            <h2>From $66,490</h2>
+            <h3>[ A revolutionary electric car ]</h3>
+            <p>
+              The Tesla Model S is a battery electric executive car with a
+              liftback body style. It features a dual-motor, all-wheel drive
+              layout, providing impressive performance and long range. Since its
+              launch in 2012, it has set benchmarks in the electric vehicle
+              market1
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="Assets/media/images/model%20y.avif" alt="" />
+            </div>
+            <h1>Tesla Model Y</h1>
+            <h2>From $31,490</h2>
+            <h3>[ A versatile electric SUV ]</h3>
+            <p>
+              The Tesla Model Y is a mid-size crossover SUV with a fully
+              electric powertrain. It offers up to 320 miles of range and
+              advanced safety features. Launched in 2020, it combines
+              performance, spaciousness, and efficiency
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="Assets/media/images/cybertruck.avif" alt="" />
+            </div>
+            <h1>Tesla Cybertruck</h1>
+            <h2>From $66,490</h2>
+            <h3>[ A futuristic electric pickup. ]</h3>
+            <p>
+              The Tesla Cybertruck is a full-size electric pickup truck with a
+              unique, angular design. It offers impressive performance,
+              including a range of up to 500 miles and a towing capacity of
+              14,000 pounds. Launched in 2023, it redefines the electric truck
+              market
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="Assets/media/images/model%20x.avif" alt="" />
+            </div>
+            <h1>Tesla Model X</h1>
+            <h2>From $63,990</h2>
+            <h3>[ A powerful electric SUV ]</h3>
+            <p>
+              The Tesla Model X is a mid-size luxury crossover SUV with a fully
+              electric powertrain. It features distinctive falcon-wing doors and
+              offers up to 335 miles of range. Launched in 2015, it combines
+              performance, spaciousness, and advanced technology
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="Assets/media/images/model3.avif" alt="" />
+            </div>
+            <h1>Tesla Model 3 ( Standard )</h1>
+            <h2>From $29,990</h2>
+            <h3>[ An affordable electric sedan ]</h3>
+            <p>
+              The Tesla Model 3 is a mid-size electric sedan with a fastback
+              design. It offers up to 341 miles of range and advanced safety
+              features. Launched in 2017, it aims to make electric vehicles more
+              accessible without compromising on performance
+            </p>
+          </div>
+
+          <div class="mobile-elem">
+            <div class="mobile-elem-img">
+              <img src="Assets/media/images/m3p.avif" alt="" />
+            </div>
+            <h1>Tesla Model 3 ( Performance )</h1>
+            <h2>From $42,490</h2>
+            <h3>[ A high-performance electric sedan ]</h3>
+            <p>
+              The Tesla Model 3 Performance features dual motors delivering 510
+              horsepower and 0-60 mph in just 2.9 seconds. It offers a range of
+              up to 328 miles and includes advanced features like adaptive
+              suspension and performance brakes
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--end of todo-->
+
+
+
+      <div id="canvas">
+        <img src="Assets/media/images/canvas.avif" alt="" />
+        <canvas></canvas>
+      </div>
+
+      <div id="showcase">
+        <div id="showcase-pin" class="relative scale-1">
+          <div class="showcase-ctn" style="clip-path: inset(0%)">
+            <img
+              class="abs-img"
+              src="Assets/media/images/dannyslogo-removebg.png"
+              alt=""
+            />
+            <img
+              class="h-full w-full object-cover"
+              src="Assets/media/images/image15.avif"
+              alt=""
+            />
+          </div>
+          <div
+            class="showcase-video video absolute top-0 left-0 h-screen w-full z-0"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              class="h-full w-full object-cover"
+              src="Assets/media/videos/hp.mp4"
+            ></video>
+          </div>
+        </div>
+
+        <div id="showcase-scroll">
+          <h1></h1>
+          <div class="showcase-scroll-container">
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[40vh] md:w-[30vw]"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="Assets/media/images/image14.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="Assets/media/images/image16.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container md:ml-12 relative">
+              <img
+                class="showcase-scroll-img h-48 w-48 object-cover"
+                src="Assets/media/images/arrow.svg"
+                alt=""
+              />
+              <div class="overflow-hidden absolute">
+                <img
+                  class="texte-circle-img h-52 w-48 object-cover"
+                  src="Assets/media/images/Texte-Circle.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="Assets/media/images/image17.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="Assets/media/images/image18.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="showcase-scroll-img-container">
+              <div
+                class="showcase-scroll-img h-[21vw] w-[35vw] md:h-[30vh] md:w-[27vw] overflow-hidden rounded-lg"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="Assets/media/images/image16.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <h2></h2>
+        </div>
+      </div>
+
+
+
+
+            <div id="page9" class="product-section">
+        <div class="product-header">
+            <h1 style="color: #0066a6;">Featured Products</h1>
+            <h2 style="color: #0066a6;">Quality Parts for Your Vehicle</h2>
+        </div>
+        <div class="product-container">
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/media/images/auto12.avif" alt="Performance Brake Kit" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Performance Brake Kit</h3>
+                        <p>Upgrade your vehicle's stopping power with our premium brake kit, engineered for safety and durability.</p>
+                        <div class="product-price">R299.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/media/images/auto13.avif" alt="High-Efficiency Alternator" />
+                    </div>
+                    <div class="product-info">
+                        <h3>High-Efficiency Alternator</h3>
+                        <p>Ensure reliable power delivery for all your vehicle's electrical systems with our advanced alternator.</p>
+                        <div class="product-price">R189.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/media/images/auto14.avif" alt="Premium Timing Belt" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Timing Belt</h3>
+                        <p>Maintain engine precision and longevity with our durable, high-quality timing belt.</p>
+                        <div class="product-price">R79.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/media/images/auto15.avif" alt="Advanced Suspension Kit" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Advanced Suspension Kit</h3>
+                        <p>Experience smoother rides and improved handling with our complete suspension upgrade kit.</p>
+                        <div class="product-price">R399.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/media/images/auto16.avif" alt="Heavy-Duty Clutch Set" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Heavy-Duty Clutch Set</h3>
+                        <p>Built for performance and endurance, our clutch set ensures seamless power transfer every time.</p>
+                        <div class="product-price">R249.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/media/images/auto17.avif" alt="All-Weather Floor Mats" />
+                    </div>
+                    <div class="product-info">
+                        <h3>All-Weather Floor Mats</h3>
+                        <p>Protect your vehicle's interior with our easy-to-clean, durable floor mats for all seasons.</p>
+                        <div class="product-price">R59.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+     
+
+     
+
+      <div class="relative w-full mt-20" id="page6">
+        <div class="page6-pin">
+          <h1 style="color: #0066a6;">
+             A product of Dannys is always <br />
+            providing unparalleled automotive excellence.
+          </h1>
+        </div>
+        <div class="page6-scroll">
+          <img
+            class="absolute top-[130%] left-[4%] sm:h-[23%] sm:w-[30%] h-[20%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg"
+            src="Assets/media/images/image18.avif"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[145%] right-[3%] h-[20%] sm:h-[23%] sm:w-[30%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg"
+            src="Assets/media/images/image19.avif"
+            alt=""
+          />
+
+          <img
+            id="pin-img"
+            class="absolute scale-[0.3] h-screen w-full object-cover z-20"
+            src="Assets/media/images/warehouse.jpg"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[180%] left-[2%] h-[20%] sm:h-[23%] sm:w-[30%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg object-cover"
+            src="Assets/media/images/image20.avif"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[195%] right-[7%] h-[20%] sm:h-[23%] sm:w-[30%] lg:h-[30%] lg:w-[20%] md:h-[27%] md:w-[30%] rounded-lg"
+            src="Assets/media/images/image21.avif"
+            alt=""
+          />
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+        <div class="foot-content">
+          <div class="left">
+            <div class="list">
+              <h2>Home</h2>
+              <h2>Brands</h2>
+              <h2>Products</h2>
+              <h2>About</h2>
+              <h2>Contact Us</h2>
+            </div>
+            <div class="list">
+              <h2>Facebook</h2>
+              <h2>Twitter</h2>
+              <h2>LinkedIn</h2>
+              <h2>Instagram</h2>
+            </div>  
+          </div>
+          <div class="right">
+            <h1>
+              Our newsletters are a concentrated blast of all the latest
+              insights from Dannys.
+            </h1>
+            <h2>No spam – Unsubscribe anytime.</h2>
+            <div class="input flex gap-3">
+              <input placeholder="First name" type="text" />
+              <input placeholder="Last name" type="text" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot-scroll">
+          <a href="#">
+            <h1>DANNY'S</h1>
+          </a>
+          <h1>PERFORMANCE - RELIABLE - SUSTAINABLE</h1>
+        </div>
+      </div>
+    </main>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="../cdn.jsdelivr.net/gh/studio-freight/lenis%400.2.28/bundled/lenis.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
