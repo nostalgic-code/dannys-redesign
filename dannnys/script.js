@@ -18,68 +18,98 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(scrollFn);
   };
   initSmoothScrolling();
+  
+  // Call the loader function immediately after DOM content is loaded
+  loader();
 });
 
 function loader(){
-  document.querySelector(".loader-welcome img").style.opacity = 0
-  document.body.style.overflow = "hidden";
-
-
-  function startLoader(){
-  let counterElement = document.querySelector(".counter>h1")
-  let currentValue = 0
-
-  function updateCounter(){
-    if(currentValue == 100){
-      return;
+  try {
+    const loaderImg = document.querySelector(".loader-welcome img");
+    if (loaderImg) {
+      loaderImg.style.opacity = 0;
     }
+    
+    document.body.style.overflow = "hidden";
 
-    currentValue += Math.floor(Math.random() * 10 ) + 1;
+    function startLoader(){
+      let counterElement = document.querySelector(".counter>h1");
+      if (!counterElement) {
+        console.error("Counter element not found");
+        return;
+      }
+      
+      let currentValue = 0;
 
-    if(currentValue > 100 ){
-      currentValue = 100;
+      function updateCounter(){
+        if(currentValue == 100){
+          return;
+        }
+
+        currentValue += Math.floor(Math.random() * 10 ) + 1;
+
+        if(currentValue > 100 ){
+          currentValue = 100;
+        }
+
+        counterElement.textContent = currentValue;
+
+        let delay = Math.floor(Math.random() * 200 ) + 50;
+        setTimeout(updateCounter, delay);
+      } 
+
+      updateCounter();
     }
-
-    counterElement.textContent = currentValue
-
-    let delay = Math.floor(Math.random() * 200 ) + 50
-    setTimeout(updateCounter, delay)
-
-  } 
-
-  updateCounter()
+    startLoader();
+  } catch (error) {
+    console.error("Error in loader function:", error);
+    // Still try to show the main content if there's an error
+    document.body.style.overflow = "visible";
+    const counter = document.querySelector(".counter");
+    const loaderOverlay = document.querySelector(".loader-overlay");
+    if (counter) counter.style.display = "none";
+    if (loaderOverlay) loaderOverlay.style.display = "none";
   }
-  startLoader()
 
-  gsap.to(".loader-welcome img",{
-    opacity:1,
-    duration:2,
-    ease: "power3.inOut"
-  })
+  try {
+    gsap.to(".loader-welcome img", {
+      opacity: 1,
+      duration: 2,
+      ease: "power3.inOut"
+    });
 
-  let tl = gsap.timeline()
+    let tl = gsap.timeline();
 
-  tl.to(".counter",2,{
-    delay:3.5,
-    opacity:0
-  },'a')
+    tl.to(".counter", 2, {
+      delay: 3.5,
+      opacity: 0
+    }, 'a');
 
-  tl.to(".bar",1.5, {
-    delay:3.5,
-    height:0,
-    stagger:{
-      amount:0.5
-    },
-    ease: "power3.inOut"
-  },'a')
+    tl.to(".bar", 1.5, {
+      delay: 3.5,
+      height: 0,
+      stagger: {
+        amount: 0.5
+      },
+      ease: "power3.inOut"
+    }, 'a');
 
-  tl.to("body", {
-    overflow : "visible"
-  })
+    tl.to("body", {
+      overflow: "visible"
+    });
 
-  tl.to(".counter, .loader-overlay",{
-    display:"none"
-  })
+    tl.to(".counter, .loader-overlay", {
+      display: "none"
+    });
+  } catch (error) {
+    console.error("Error in GSAP animations:", error);
+    // Make sure content is visible if animation fails
+    document.body.style.overflow = "visible";
+    const counter = document.querySelector(".counter");
+    const loaderOverlay = document.querySelector(".loader-overlay");
+    if (counter) counter.style.display = "none";
+    if (loaderOverlay) loaderOverlay.style.display = "none";
+  }
 }
 
 function nav() {
@@ -872,4 +902,4 @@ slides();
 
 page6();
 footer()
-loader()
+// loader is now called in the DOMContentLoaded event listener
